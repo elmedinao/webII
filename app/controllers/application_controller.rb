@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     end
     
     def create
-      g = Gif.new
+      g = Profile.new
       g.name = params['name']
       g.caption = params['caption']
       g.url = params['url']
